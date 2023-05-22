@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: aquamarine;
+    background-image: url(/public/imgs/bg.jpg);
+    background-size: cover;
+  }
+
+  header {
+    position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%; 
+  background-color: #f1f1f1;
+  padding: 10px;
+  }
+
+
+div {
+    height: 100vh;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parentDiv {
+    height: 0 auto;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttonDiv {
+    margin-bottom: 1rem; /* Optional, adds some space between the divs */
+}
+  
+  button {
+    transition: all 1s;
+    margin: 1rem;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem;
+    height: 10rem;
+    width: 15rem;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 32px;
+    text-transform: uppercase;
+    background-color: rgb(240, 248, 255, 0);
+    border: 1px solid rgb(255, 255, 255, .25);
+    cursor: pointer;
+}
+
+button:hover {
+    transition: all 1s;
+    backdrop-filter: blur(100px);     
+    transform: scale(1.1);
+    border: 1px solid rgb(255, 255, 255, 1);
+}
+
+button:active {
+    background-color: white;
+    color: #fff;
+    box-shadow: 0px 0px 999px white;
+    transform: scale(1.2);
+    transition: ease-in-out .01s;
+  }
+
+
+  .fade-enter {
+    opacity: 0;
+  }
+  
+  .fade-enter-active {
+    opacity: 1;
+    transition: opacity 300ms;
+  }
+  
+  .fade-exit {
+    opacity: 1;
+  }
+  
+  .fade-exit-active {
+    opacity: 0;
+    transition: opacity 300ms;
+  }
+  
